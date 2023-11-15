@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+
+:root{
+    --amarillo: #FFBC0D;
+    --marron: #6E5519;
+    --cremita: #F5EBDC;
+    --ladrillo: #D32B08;
+    --naranja: #E85D04;
+    --verde: #007E00;
+
+}
+
+*{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    background-color: var(--cremita);
+}
+
+/*********************/
+/*      HEADER      */
+/*      navbar      */
+/********************/
+.contenedor-logo{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    
+}
+.contenedor-logo-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.logo-img{
+    width: 60px;
+    margin: 0 0 0 96px;
+}
+
+.contenedor-navbar{
+    background-color: var(--amarillo);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;         /*VER SI DEJO AROUND*/
+    align-items: center;
+    padding: 16px;
+}
+.btn-navbar{
+    background-color: var(--cremita);
+    padding: 4px 16px;
+    border: 2px solid #000;
+    border-radius: 8px;
+}
+.contenedor-items{
+    display: flex;
+    justify-content: space-between;
+    gap: 56px;
+}
+.items{
+    display: flex;
+    gap: 20px;
+    align-items: baseline;
+    margin: 0 96px 0 0;
+}
+.links-navbar{
+    margin-right: 36px;
+}
+.contenedor-prod{
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 0 8px;
+    gap: 8px;
+    justify-content: space-around;
+}
+.items li{
+    list-style: none;
+    
+}
+.items a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+    position: relative;
+    
+}
+.vertical-menu > li{
+    text-align: center;
+    padding: 4px;
+    display: block;
+    border-bottom: 1px solid #000;
+    font-size: 1rem;
+}
+.vertical-menu > li:hover{
+    background-color: #f3ddbd;
+}
+.nav-item-dropdown{
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.nav-item-dropdown .vertical-menu{
+    position: absolute;
+    display: none;
+    list-style: none;
+    background-color: var(--cremita);
+    top: 100%;
+    left: 0;
+    border-radius: 0 0 8px 8px;
+    border: 1px solid #000;
+    border-top: none;
+}
+.nav-item-dropdown:hover .vertical-menu{
+    display: block;
+}
+.contenedor-usuario{
+    display: flex;
+    gap: 8px;
+}
+
+.search-form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--cremita);
+    overflow: hidden;
+    gap: 130px;
+    margin: 0;
+}
+.search-form input{
+    outline: none;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 16px;
+    border: none;
+    padding: 0 8px;
+    color: var(--marron);
+    background-color: var(--cremita);
+}
+.search-form input::-webkit-search-cancel-button {
+	appearance: none;
+}
+
+.search-form .btn-search{
+    border: none;
+    background-color: var(--cremita);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    color: var(--marron);
+}
+.contenedor-menu-cel{
+    display: none;
+}
+.item-link{
+    display: flex;
+
+}
+.item-link:hover{
+    scale: 1.08;
+}
+/*********************/
+/*    CONTENEDOR     */
+/*********************/
+.contenedor-titulo{
+    text-align: center;
+    font-size: 24px;
+    margin-top: 5%;
+}
+.contenedor-botones{
+    display: flex;
+    margin-left: 10%;
+    justify-content: end;
+    margin-right: 10%;
+    margin-bottom: 16px;
+}
+.contenedor-botones .search-form{
+    background-color: white;
+}
+.contenedor-botones .search-form input{
+    background-color: white;
+}
+.contenedor-botones .search-form .btn-search{
+    background-color: white;
+}
+.boton-registro{
+    background-color: #D32B08;
+    color: white;
+    border: #D32B08;
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 8px;
+}
+.contenedor-tabla{
+    background-color: #F5EBDC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    max-width: fit-content;
+    overflow-x: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.tabla{
+    width: 100%;
+    font-size: 16px;
+    table-layout: fixed;
+    border-collapse:collapse;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+th{
+    background-color: #FFBC0D;
+    padding: 16px;
+
+}
+td{
+    padding: 16px;
+    background-color: #F8E2A9;
+}
+td img{
+    width: 24px;
+    margin-left: 10px;
+}
+
+
+/*********************/
+/*      FOOTER      */
+/********************/
+.pie-pagina{
+    width: 100%;
+    background-color: #FFBC0D;
+    font-family: 'Plus Jakarta Sans',sans-serif;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1350px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 56px;
+    padding: 30px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 60%;
+    height: 60%;
+    margin-left: 30%;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+    width: 120px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #6E5519;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #6E5519;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-2{
+    padding: 15px 10px;
+    text-align: center;
+    color: #6E5519;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+.vertical-menu{
+    padding-left: 0;
+}
+
+/*      PANTALLA PARA TABLETS*/
+@media (min-width:414px) and (max-width: 1256px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+    .pie-pagina .grupo-1 .box figure{
+        width: 60%;
+        height: 60%;
+        margin-left: 35%;
+        
+    }
+
+}
+
+/*      PANTALLA PARA CELULARES     */
+@media (max-width: 414px){
+
+    .pie-pagina .grupo-1{
+        width: 75%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:20px;
+        padding: 20px 0px;
+    }
+    .pie-pagina .grupo-1 .box figure{
+        width: 60%;
+        height: 60%;
+        margin-left: 20%;
+    }
+}
+
+
+#nombre{
+    text-align: center;
+    font-family: 'Orelega One', sans-serif;
+    font-size: 32px;
+}
